@@ -11,7 +11,6 @@ def extract_pdf_text(file_path: str) -> str:
 
     return text
 
-
 pdf_text = extract_pdf_text("Lin_Khant_Htel.pdf")
 
 splitter = RecursiveCharacterTextSplitter(
