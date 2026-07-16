@@ -62,8 +62,8 @@ result = agent.invoke(
             {
                 "role": "user",
                 "content": (
-                    "My order is ORD-1001. "
-                    "Where is my refund, and how long should it take?"
+                    "My order is ORD-1002. "
+                    "I want to know the status of my order and the amount"
                 ),
             }
         ]
