@@ -38,7 +38,8 @@ def embed_node(state: IngestionState):
     }
 
 
-graph = StateGraph(IngestionState)
+graph = StateGraph[IngestionState, None, IngestionState, IngestionState](IngestionState)
+# graph = StateGraph(IngestionState)
 
 graph.add_node("chunk", chunk_node)
 graph.add_node("embed", embed_node)
