@@ -8,7 +8,7 @@ load_dotenv()
 
 @dataclass
 class Context:
-    user_role: str
+    user_role: str 
 
 @dynamic_prompt
 def user_role_prompt(request: ModelRequest) -> str:
