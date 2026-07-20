@@ -18,11 +18,11 @@ agent = create_agent(
 )
 
 response = agent.invoke({
-    'message': [
+    'messages': [
         {'role': 'user', 'content': 'What is the weather like in Singapore?'}
     ]
 })
 
-print(response)
-print(response['message'][-1].content)
+# print(response)
+print(response["messages"][-1].content)
 
