@@ -50,4 +50,4 @@ human_response = Command(
 # Resume execution
 resumed = app.stream_events(human_response, config, version="v3")
 final_state = resumed.output
-print("Email sent successfully!")
+print("Email sent successfully!") 
