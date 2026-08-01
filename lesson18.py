@@ -3,17 +3,17 @@
 Pieces you already learned, now connected:
 
   knowledge docs
-       ↓
+       V
   chunk + metadata
-       ↓
-  embed + store in Chroma     ← lesson5 / lesson9
-       ↓
-  retrieve top-k chunks       ← lesson3 / lesson10
-       ↓
-  generate answer with LLM    ← grounded on retrieved context only
+       V
+  embed + store in Chroma <- lesson5 / lesson9
+       V
+  retrieve top-k chunks <- lesson3 / lesson10
+       V
+  generate answer with LLM <- grounded on retrieved context only
 
 Run:
-  ollama serve
+  ollama serve (ollama pull llama3.2)
   python lesson18.py
 """
 
@@ -36,7 +36,7 @@ embeddings = HuggingFaceEmbeddings(
 llm = init_chat_model("ollama:llama3.2", temperature=0)
 
 
-# --- 1) Knowledge base (in real apps: PDFs, Notion, DB rows) ---
+# 1. Knowledge base (in real apps: PDFs, Notion, DB rows) 
 RAW_DOCS = [
     Document(
         page_content=(
