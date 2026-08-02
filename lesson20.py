@@ -4,13 +4,13 @@ Naïve RAG always retrieves once, then answers.
 Corrective RAG adds a quality loop:
 
   START
-    → retrieve
-    → grade_documents      (are chunks actually relevant?)
-    → route
-         ├─ generate          (good enough)
-         └─ rewrite_question  (bad retrieval) → retrieve again
-    → generate
-    → END
+    -> retrieve
+    -> grade_documents (are chunks actually relevant?)
+    -> route 
+         |- generate (good enough)
+         |- rewrite_question (bad retrieval) -> retrieve again
+    -> generate
+    -> END
 
 This is closer to production support bots that refuse to hallucinate
 when retrieval fails.
