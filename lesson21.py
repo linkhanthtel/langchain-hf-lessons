@@ -10,14 +10,14 @@ Difference from lesson18 (fixed RAG pipeline):
 
   User question
        │
-       ▼
+       V
   create_agent loop
-       ├─ answer directly (small talk / known facts)
-       └─ call retrieve_docs tool → then answer with context
+       |- answer directly (small talk / known facts)
+       |- call retrieve_docs tool → then answer with context
 
 Real-world scenario:
   A SaaS in-app help chatbot (Cosmic Learning).
-  - "hi" → no retrieval needed
+  - "hi" -> no retrieval needed
   - "how do refunds work?" → must search the knowledge base
   - Saves cost/latency by not hitting the vector DB on every message
 
@@ -36,10 +36,8 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 load_dotenv()
 
-# ---------------------------------------------------------------------------
 # Real-world: these docs usually come from Notion / Zendesk / uploaded PDFs
 # and are re-indexed on a schedule (nightly job or webhook on publish).
-# ---------------------------------------------------------------------------
 RAW_DOCS = [
     Document(
         page_content=(
