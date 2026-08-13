@@ -4,7 +4,6 @@ Docs reference:
   https://docs.langchain.com/oss/python/langgraph/overview
   Conditional edges + multi-node workflows
 
-=============================================================================
 LESSON vs REAL WORLD
 -----------------------------------------------------------------------------
 This lesson                          Real products
@@ -14,8 +13,7 @@ handle_billing node                  Billing microservice + Stripe tools
 handle_tech node                     Statuspage + log search tools
 handle_sales node                    CRM + pricing catalog RAG
 escalate node                        Zendesk ticket create + human queue
-one Python graph                     API gateway → worker queues
-=============================================================================
+one Python graph                     API gateway -> worker queues
 
 Useful cases:
   - Phone IVR / chat "Press 1 for billing..."
