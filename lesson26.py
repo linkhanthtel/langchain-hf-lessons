@@ -3,7 +3,6 @@
 Docs reference:
   RAG generate → verify pattern (related to corrective RAG / lesson20)
 
-=============================================================================
 LESSON vs REAL WORLD
 -----------------------------------------------------------------------------
 This lesson                          Real products
@@ -13,7 +12,6 @@ YES/NO groundedness score            Separate judge model or NLI classifier
 block ungrounded answers             Show "I don't know" + escalate to human
 Cosmic Learning FAQ corpus           Approved policy corpus only
 local Ollama judge                   Stronger judge model than the drafter
-=============================================================================
 
 Useful cases:
   - Banks / insurance: cannot invent policy numbers
