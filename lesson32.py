@@ -4,8 +4,8 @@ GOAL (one idea only):
   Turn a Python function into something the model can call.
 
 LangChain piece:
-  @tool  → wraps your function
-  model.bind_tools([tool]) → model may request that tool
+  @tool  -> wraps your function
+  model.bind_tools([tool]) -> model may request that tool
 
 Useful:
   - get weather
@@ -31,7 +31,7 @@ def get_plan_price(plan_name: str) -> str:
     """Return the monthly price for a Cosmic Learning plan."""
     prices = {
         "free": "$0",
-        "premium": "$12",
+        "premium": "$9",
     }
     return prices.get(plan_name.lower(), "Unknown plan")
 
