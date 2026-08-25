@@ -1,7 +1,7 @@
 """lesson36 — Classify a support ticket (auto-routing)
 
 GOAL:
-  Read a customer message → label it (billing / tech / sales).
+  Read a customer message -> label it (billing / tech / sales).
 
 Useful in real life:
   - send billing tickets to the billing team
@@ -46,4 +46,4 @@ for text in tickets:
     print()
 
 # Real world tip:
-# After classify → route to the right queue / Slack channel / email inbox
+# After classify -> route to the right queue / Slack channel / email inbox
